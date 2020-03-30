@@ -10,3 +10,7 @@
 #### /ds
 
 1. **linkedlistpalindrome.py** - Check if the Linked list is a palindrome
+
+#### /data
+
+1. **simplepandas.py** - Usage of pandas for simple functions like reading CSV files etc.
