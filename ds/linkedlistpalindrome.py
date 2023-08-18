@@ -1,20 +1,20 @@
-#Your task is to check if given linkedlist is a pallindrome or not.
+# Check if given linkedlist is a palindrome or not.
 
 class Node:
 	def __init__(self, data, next):
 		self.data = data
 		self.next = next
 
-palin3 = Node(10, None)
-palin2 = Node(20, palin3)
-palin1 = Node(10, palin2)
-
-notpalin4 = Node(40, None)
-notpalin3 = Node(10, notpalin4)
-notpalin2 = Node(30, notpalin3)
-notpalin1 = Node(10, notpalin2)
-
 def isLinkedListPalindrome(head):
+	"""
+	Check if a linked list is a palindrome.
+
+	Parameters:
+	- head: The head node of the linked list.
+
+	Returns:
+	- isReverse: A boolean indicating whether the linked list is a palindrome or not.
+	"""
 	tempList = []
 	isReverse = False
 
@@ -29,12 +29,3 @@ def isLinkedListPalindrome(head):
 
 	return(isReverse)
 
-if (isLinkedListPalindrome(palin1) == True):
-	print("Yes, the LL  is a palindrome")
-else:
-	print("No, the LL  is not a palindrome")
-
-if (isLinkedListPalindrome(notpalin1) == True):
-	print("Yes, the LL is a palindrome")
-else:
-	print("No, the LL  is not a palindrome")
